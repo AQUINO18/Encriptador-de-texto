@@ -1,0 +1,254 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.texto {
+    position: absolute;
+    width: 32%;
+    height: 15%;
+    left: 40%;
+    top: 5%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: rgba(14, 14, 14, 0.3);
+    border-radius: 8.6%;
+    border: 4px solid #00ff00;
+    padding: 10px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.texto::placeholder {
+    font-family: 'Bangers', cursive; /* Fuente con aspecto cómico */
+    color: #39ff14; /* Color verde similar al del título de Rick and Morty */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.texto:focus,
+.texto:active {
+   /* border: none;
+    outline: none;*/
+    font-family: 'Bangers', cursive; /* Fuente con aspecto cómico */
+    color: #39ff14; /* Color verde similar al del título de Rick and Morty */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+/*.terminos p {
+    /*font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10%;
+    color: #fbf8f8;
+    opacity: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;*/
+    
+/*}*/
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 45%;
+    left: 34%;
+    top: 85%;
+}
+
+.btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color:rgb(145, 10, 10);
+    border-radius: none;
+    border: 20px solid #000000;
+    font-family: 'Bangers', cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 20px;
+    top: 30%;
+}
+
+.btn-encriptador {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color:rgb(145, 10, 10);
+    border: 20px solid #000000;
+    border-radius: none;
+    font-family: 'Bangers', cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-encriptar:hover,
+.btn-encriptador:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.Encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    left: 30%;
+    top: 40%;
+    background-color: rgba(14, 14, 14, 0.5);
+    /*box-shadow: 0px 24px 32px -8px rgba(245, 243, 243, 0.08);*/
+    border-radius: 8.6%;
+    border: 4px solid #00ff00;
+}
+
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2 {
+   /*width: 60%;
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #f6f6f5;*/
+    font-family: 'Bangers', cursive; /* Fuente con aspecto cómico */
+    color: #39ff14; /* Color verde similar al del título de Rick and Morty */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    text-shadow: 8px 8px 16px rgba(15, 15, 15, 0.7); 
+}
+
+.mensaje-encriptado p {
+   /* width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #f9f9f7;*/
+    font-family: 'Bangers', cursive; /* Fuente con aspecto cómico */
+    color: #ffffff; /* Color verde similar al del título de Rick and Morty */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.3); 
+}
+
+.Encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 10%;
+}
+
+@media (max-width: 57.5em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .Encriptado {
+        width: 100%; 
+    }
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .terminos p {
+        font-size: 16px;
+    }
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-encriptar,
+    .btn-encriptador {
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-encriptar:hover,
+    .btn-encriptador:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .Encriptado {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje-encriptado {
+        width: 100%;
+        top: 5%;
+    }
+    .Encriptado img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
